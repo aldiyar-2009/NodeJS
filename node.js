@@ -1,8 +1,5 @@
-const os = require("os");
-const greeting = require("./greeting");
+const User = require("./user.js");
  
-// имя текущего пользователя
-const userName = os.userInfo().username;
- 
-console.log(`Дата запроса: ${greeting.date}`);
-greeting.printMessage(userName);
+const eugene = new User("aldiyar", 17);
+eugene.print();
+eugene.sayHi();
